@@ -59,7 +59,7 @@ export const questions = [
     category: "Condicionais",
     level: "Intermediário",
     question: "O que será exibido no console?",
-    code: "const idade = 16;\\nif (idade >= 18) {\\n  console.log('Maior');\\n} else {\\n  console.log('Menor');\\n}",
+    code: "const idade = 16;\nif (idade >= 18) {\n  console.log('Maior');\n} else {\n  console.log('Menor');\n}",
     options: ['"Maior"', '"Menor"', '"16"', "Nada"],
     answer: 1,
     explanation: "Como 16 não é maior ou igual a 18, a condição é falsa e o bloco else é executado."
@@ -79,7 +79,7 @@ export const questions = [
     category: "Repetição",
     level: "Intermediário",
     question: "Quantas vezes a mensagem será exibida?",
-    code: "for (let i = 0; i < 4; i++) {\\n  console.log('Olá');\\n}",
+    code: "for (let i = 0; i < 4; i++) {\n  console.log('Olá');\n}",
     options: ["3 vezes", "4 vezes", "5 vezes", "Infinitas vezes"],
     answer: 1,
     explanation: "A variável começa em 0 e o laço continua enquanto i < 4. Os valores são 0, 1, 2 e 3: quatro repetições."
@@ -99,7 +99,7 @@ export const questions = [
     category: "Funções",
     level: "Intermediário",
     question: "O que será retornado pela função soma(4, 3)?",
-    code: "function soma(a, b) {\\n  return a + b;\\n}\\n\\nsoma(4, 3);",
+    code: "function soma(a, b) {\n  return a + b;\n}\n\nsoma(4, 3);",
     options: ["43", "1", "7", "undefined"],
     answer: 2,
     explanation: "Os argumentos 4 e 3 são recebidos pelos parâmetros a e b. A função retorna a soma: 7."
@@ -164,7 +164,7 @@ export const questions = [
     category: "React",
     level: "Avançado",
     question: "Quando o useEffect com uma lista de dependências vazia é executado?",
-    code: "useEffect(() => {\\n  console.log('Iniciou');\\n}, []);",
+    code: "useEffect(() => {\n  console.log('Iniciou');\n}, []);",
     options: [
       "A cada clique em qualquer botão",
       "Somente quando uma variável global muda",
