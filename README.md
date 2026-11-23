@@ -25,6 +25,22 @@ npm run dev
 4. Clique em **Deploy**.
 5. Abra o endereço gerado em uma janela anônima e teste o quiz.
 
+## Interface e acessibilidade
+
+Paleta usada no tema escuro:
+- Fundo: #101827
+- Verde de destaque: #9CE6BF
+- Roxo de apoio: #B5A5FF
+- Laranja de apoio: #FFBD83
+
+A interface usa componentes React, botões com rótulos claros, foco visível pelo teclado e layouts adaptados para telas pequenas.
+
+## Revisão com GitHub Copilot
+
+No VS Code, abra o projeto e peça ao agente especialista em React para revisar o código. Prompt sugerido:
+
+> Revise este aplicativo React. Explique como os componentes se comunicam e como useState e useEffect são usados para controlar respostas e salvar o progresso no localStorage. Verifique possíveis erros e proponha melhorias sem alterar o funcionamento sem explicar.
+
 ## Tecnologias
 
 React, JavaScript, Vite, CSS e localStorage.
