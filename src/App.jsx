@@ -104,7 +104,7 @@ function HomeScreen({ bestScore, savedProgress, onStart, onContinue }) {
       <section className="topics-section">
         <div className="section-heading">
           <div><span className="section-kicker">O QUE VOCÊ VAI REVISAR</span><h2>Do básico ao React.</h2></div>
-          <span className="topic-count">08 áreas de conhecimento</span>
+          <span className="topic-count">09 áreas de conhecimento</span>
         </div>
         <div className="topic-list">
           {categories.slice(1).map((category, index) => (
@@ -189,7 +189,7 @@ function QuizScreen({ session, onAnswer, onNext, onPrevious, onExit }) {
           <div className="sidebar-card">
             <span className="section-kicker">SUA REVISÃO</span>
             <div className="sidebar-progress">
-              <div className="mini-progress-ring"><span>{answeredCount}<small>/{session.questionIds.length}</small></span></div>
+              <div className="mini-progress-ring" style={{ background: "conic-gradient(var(--green) " + (answeredCount / session.questionIds.length * 360) + "deg, rgba(156,230,191,.12) 0deg)" }}><span>{answeredCount}<small>/{session.questionIds.length}</small></span></div>
               <div><strong>{answeredCount} respondidas</strong><p>Continue no seu ritmo.</p></div>
             </div>
             <div className="sidebar-divider" />
@@ -215,7 +215,7 @@ function ResultScreen({ result, bestScore, onRestart, onHome }) {
       <div className="result-banner">
         <span className="section-kicker">REVISÃO CONCLUÍDA</span>
         <div className="result-score-layout">
-          <div className="score-circle"><div><strong>{percentage}<small>%</small></strong><span>DE ACERTOS</span></div></div>
+          <div className="score-circle" style={{ background: "conic-gradient(var(--green) " + (percentage * 3.6) + "deg, #2b3a4b 0deg)" }}><div><strong>{percentage}<small>%</small></strong><span>DE ACERTOS</span></div></div>
           <div className="result-message"><h1>{message[0]}</h1><p>{message[1]}</p><span className="score-detail">{result.score} de {result.total} respostas corretas</span></div>
         </div>
         <div className="result-metrics">
